@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0;url=step2-instagram.html" />
     <meta name="referrer" content="no-referrer" />
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="1;url=step2-instagram.html" />
+    <style>
+      body {
+        margin: 0;
+        background: #f8f9fa;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #444;
+      }
+      .container {
+        text-align: center;
+      }
+      .spinner {
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+        border: 5px solid #ccc;
+        border-top: 5px solid #555;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
-    <p style="text-align:center; font-family:sans-serif; margin-top:20%;">
-      Redirecting to Instagram...
-    </p>
+    <div class="container">
+      <h2>Redirecting you securely...</h2>
+      <p>Please wait a moment</p>
+      <div class="spinner"></div>
+    </div>
   </body>
 </html>
